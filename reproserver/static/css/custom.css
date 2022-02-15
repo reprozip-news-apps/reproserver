@@ -40,6 +40,7 @@ a {
 }
 
 .navbar-inverse .navbar-nav > li > a {
+  color:#ffffff;
   text-decoration: none;
   padding-left: 1.3em;
   padding-right: 1.3em;
@@ -56,6 +57,7 @@ a {
 }
 
 .navbar-inverse .navbar-brand {
+  color: #ffffff;
   text-decoration: none;
 }
 
