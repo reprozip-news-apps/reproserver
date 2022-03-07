@@ -8,7 +8,34 @@
     content: "\e080";
 }
 
+/* -------------------- FONT -------------------- */
+
+body{
+  font-family: "Lato", sans-serif;
+}
+
 /* -------------------- BODY -------------------- */
+
+h1, .h1, h2, .h2, h3, .h3 {
+  margin-top: 21px;
+  margin-bottom: 10.5px;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+div.form-group {
+  margin-bottom: 15px;
+}
+
+body {
+  font-family: "Lato";
+}
+
+div.container {
+  max-width: 1170px;
+}
 
 a:hover, a:focus {
   color: #4AA8DC;
@@ -24,22 +51,28 @@ a {
   text-decoration: none;
 }
 
-/* -------------------- NAVBAR -------------------- */
-
-.navbar-inverse {
-  background-color: #57068C;
+code {
+  padding: 2px 4px;
+  background-color: #f9f2f4;
 }
 
-.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+/* -------------------- NAVBAR -------------------- */
+
+.navbar-dark {
+  background-color: #57068C;
+  min-height: 60px;
+}
+
+.navbar-dark .navbar-nav > .active > a, .navbar-dark .navbar-nav > .active > a:hover, .navbar-dark .navbar-nav > .active > a:focus {
   background-color:#4AA8DC;
 }
 
-.navbar-inverse .navbar-nav >.open >a, .navbar-inverse .navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav>.open>a:focus {
+.navbar-dark .navbar-nav >.open >a, .navbar-dark .navbar-nav>.open>a:hover, .navbar-dark .navbar-nav>.open>a:focus {
   background-color: #4AA8DC;
   color: #ffffff;
 }
 
-.navbar-inverse .navbar-nav > li > a {
+.navbar-dark .navbar-nav > li > a {
   color:#ffffff;
   text-decoration: none;
   padding-left: 1.3em;
@@ -47,21 +80,21 @@ a {
   font-size:1.2em;
 }
 
-.navbar-inverse .navbar-nav > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+.navbar-dark .navbar-nav > a:hover, .navbar-dark .navbar-nav > .active > a:focus {
   color:#4AA8DC;
   text-decoration: none;
 }
 
-.navbar-inverse .navbar-nav > li > a:hover{
+.navbar-dark .navbar-nav > li > a:hover{
   color: #4AA8DC;
 }
 
-.navbar-inverse .navbar-brand {
+.navbar-dark .navbar-brand {
   color: #ffffff;
   text-decoration: none;
 }
 
-.navbar-inverse .navbar-brand:hover, .navbar-inverse .navbar-brand:focus {
+.navbar-dark .navbar-brand:hover, .navbar-dark .navbar-brand:focus {
   color:#4AA8DC;
   text-decoration: none;
   background-color: transparent;
@@ -79,6 +112,7 @@ a {
   color: #ffffff;
   background-color: #9a69ba;
   border-color: #9a69ba;
+  padding: 10px 15px;
 }
 .btn-default:focus,
 .btn-default.focus {

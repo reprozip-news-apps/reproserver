@@ -7,6 +7,7 @@
 
     <link rel="stylesheet" href="{{ static_url('css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ static_url('css/custom.css') }}">
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
 
     <title>ReproServer</title>
   </head>
@@ -15,21 +16,16 @@
     <div class="container" id="content" role="main">
 
       <!-- Menubar -->
-      <nav class="navbar navbar-inverse navbar-expand-md">
+      <nav class="navbar navbar-dark navbar-expand-lg rounded"  style="background-color: #57068C;">
         <div class="container-fluid">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#bs-example-navbar-collapse-2">
-              <span class="navbar-toggler-icon">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">ReproServer</a>
-          </div>
+          <a class="navbar-brand" href="#">ReproServer</a>
+          <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#bs-example-navbar-collapse-2" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
-            <ul class="nav navbar-nav">
-              <li><a href="{{ reverse_url('index') }}">Upload</a></li>
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2" aria-expanded="true">
+            <ul class="nav navbar-nav me-auto mb-2 mb-lg-0">
+              <li><a aria-current="page"  href="{{ reverse_url('index') }}">Upload</a></li>
 {% if experiment_url %}
               <li><a href="{{ experiment_url }}">Reproduce</a></li>
 {% endif %}
