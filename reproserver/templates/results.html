@@ -6,17 +6,17 @@
 
 {% if run.done %}
 
-<div class="panel panel-success" id="panel1">
-  <div class="panel-heading">
-    <h4 class="panel-title">
-      <a data-toggle="collapse" data-target="#runlog"
+<div class="card" id="panel1">
+  <div class="card-header">
+    <h4 class="card-title">
+      <a data-bs-toggle="collapse" data-bs-target="#runlog"
          href="#runlog" class="collapsed">
         Run log
       </a>
     </h4>
   </div>
-  <div id="runlog" class="panel-collapse collapse">
-    <div class="panel-body">
+  <div id="runlog" class="card-collapse collapse">
+    <div class="card-body">
       <pre>{% for line in log %}{{ line }}
 {% endfor %}</pre>
     </div>

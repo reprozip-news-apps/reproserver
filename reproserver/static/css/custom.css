@@ -1,10 +1,10 @@
-.panel-heading a:after {
+.card-header a:after {
     font-family: 'Glyphicons Halflings';
     content: "\e114";
     float: right;
     color: grey;
 }
-.panel-heading a.collapsed:after {
+.card-header a.collapsed:after {
     content: "\e080";
 }
 
@@ -100,6 +100,11 @@ code {
   background-color: transparent;
 }
 
+.dropdown-menu > li > a {
+  color: #7b8a8b;
+  text-decoration: underline;
+}
+
 .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
   text-decoration: none;
   color: #ffffff;
@@ -168,23 +173,23 @@ fieldset[disabled] .btn-default.focus {
   background-color: #ffffff;
 }
 
-/* -------------------- PANEL -------------------- */
+/* -------------------- CARD -------------------- */
 
-.panel-success {
+.card {
   border-color: #AB82C5;
 }
-.panel-success > .panel-heading {
+.card > .card-header {
   color: #ffffff;
   background-color: #AB82C5;
   border-color: #AB82C5;
 }
-.panel-success > .panel-heading + .panel-collapse > .panel-body {
+.card > .card-header + .card-collapse > .card-body {
   border-top-color: #AB82C5;
 }
-.panel-success > .panel-heading .badge {
+.card > .card-header .badge {
   color: #AB82C5;
   background-color: #ffffff;
 }
-.panel-success > .panel-footer + .panel-collapse > .panel-body {
+.card > .card-footer + .card-collapse > .card-body {
   border-bottom-color: #AB82C5;
 }
