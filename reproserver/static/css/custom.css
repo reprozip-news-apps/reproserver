@@ -56,6 +56,20 @@ code {
   background-color: #f9f2f4;
 }
 
+pre {
+  display: block;
+  padding: 10px;
+  margin: 0 0 10.5px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  word-break: break-all;
+  word-wrap: break-word;
+  color: #7b8a8b;
+  background-color: #ecf0f1;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+}
+
 /* -------------------- NAVBAR -------------------- */
 
 .navbar-dark {
@@ -174,6 +188,10 @@ fieldset[disabled] .btn-default.focus {
 }
 
 /* -------------------- CARD -------------------- */
+
+.card-title > a {
+  color: #ffffff;
+}
 
 .card {
   border-color: #AB82C5;
