@@ -193,6 +193,10 @@ fieldset[disabled] .btn-default.focus {
   color: #ffffff;
 }
 
+.card-title {
+  margin-bottom: 0px;
+}
+
 .card {
   border-color: #AB82C5;
 }
