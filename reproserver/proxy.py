@@ -311,6 +311,15 @@ class K8sSubdirProxyHandler(SubdirRewriteMixin, K8sProxyHandler):
     _re_path = re.compile(r'^/?results/([^/]+)/port/([0-9]+)')
 
     def select_destination(self):
+        if (
+            self.request.headers.pop('X-Replaywebpage', None)
+            != 'from-serviceworker'
+        ):
+            self.set_status(403)
+            logger.info("Non-service-worker request to subdir proxy")
+            self.finish("Non-service-worker request to subdir proxy")
+            return
+
         self.original_host = self.request.host
 
         # Read destination from path

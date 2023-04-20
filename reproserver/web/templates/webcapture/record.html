@@ -91,7 +91,7 @@ async function doUpload() {
   replayBase="/static/replay/"
   coll="{{ run.short_id }}"
   noWebWorker
-  config='{"hostProxy": {"{{ hostname }}": {"prefix": "/results/{{ run.short_id }}/port/{{ port_number }}", "pathOnly": true}}}'
+  config='{"hostProxy": {"{{ hostname }}": {"prefix": "/results/{{ run.short_id }}/port/{{ port_number }}", "pathOnly": true}}, "headers": {"X-Replaywebpage": "from-serviceworker"}}'
 >
 </record-web-page>
 </script>
